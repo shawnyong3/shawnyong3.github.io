@@ -3,28 +3,29 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #000;
-  color: #fff;
-  line-height: 3;
+  background: #000;   /* Black background */
+  color: #fff;        /* White text */
+  line-height: 1.6;   /* Standard readable spacing */
 }
 
 /* === Header === */
 header {
   background: #000;
   color: #fff;
-  padding: 3rem 1.5rem;
+  padding: 6rem 1.5rem 3rem; /* Extra top padding for breathing room */
   text-align: center;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-size: 3rem;     /* Bigger main title (your name) */
+  margin-bottom: 1rem;
+  font-weight: 700;    /* Strong bold for impact */
 }
 
 header p {
-  color: #aaa; /* muted gray subtitle */
+  color: #aaa;         /* Muted gray subtitle */
   margin-top: 0;
+  font-size: 1.25rem;  /* Slightly larger subtitle */
 }
 
 /* === Navigation Bar === */
@@ -38,42 +39,54 @@ nav {
 
 nav a {
   color: #fff;
-  margin: 0 1rem;
+  margin: 0 1.5rem;       /* More spacing between links */
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;  /* Slight spacing for modern look */
 }
 
 nav a:hover {
-  color: #00ffff; /* neon cyan highlight */
-  transition: 0.3s;
+  color: #00ffff;   /* Neon cyan highlight */
+  transition: color 0.3s ease;
 }
 
-/* === Section === */
+/* === Section Content === */
 section {
-  max-width: 800px;
+  max-width: 900px;   /* A little wider for portfolio content */
   margin: auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 2rem;
 }
 
-/* Headings */
 h1, h2, h3 {
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 /* === Project Cards === */
 .project {
-  background: #111;   /* slightly lighter black */
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border-radius: 8px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+  background: #111;   /* Slightly lighter black */
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.8);
 }
 
 .project h3 {
-  color: #00ffff; /* highlight project titles */
+  color: #00ffff; /* Cyan titles */
+  margin-bottom: 0.75rem;
 }
 
 /* === Footer === */
@@ -93,11 +106,6 @@ a {
 
 a:hover {
   color: #fff;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
-
-
-
-
-
 
