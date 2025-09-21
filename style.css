@@ -3,57 +3,54 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #000;   /* Black background */
+  background: #000;    /* Black background */
   color: #fff;        /* White text */
-  line-height: 1.8;   /* Standard readable spacing */
+  line-height: 1.8;    /* Standard readable spacing */
 }
 
-/* === Header === */
+/* === Header and Navigation Styles === */
 header {
+  padding: 1.5rem 2rem;
   background: #000;
-  color: #fff;
-  padding: 6rem 1.5rem 3rem; /* Extra top padding for breathing room */
-  text-align: center;
-}
-
-header h1 {
-  font-size: 3rem;     /* Bigger main title (your name) */
-  margin-bottom: 1rem;
-  font-weight: 700;    /* Strong bold for impact */
-}
-
-header p {
-  color: #aaa;         /* Muted gray subtitle */
-  margin-top: 0;
-  font-size: 1.25rem;  /* Slightly larger subtitle */
-}
-
-/* === Navigation Bar === */
-nav {
-  background: #000;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid #222;
   border-bottom: 1px solid #222;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
   color: #fff;
-  margin: 0 1.5rem;       /* More spacing between links */
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;  /* Slight spacing for modern look */
+  font-size: 1rem;
 }
 
 nav a:hover {
-  color: #00ffff;   /* Neon cyan highlight */
+  color: #00ffff;
   transition: color 0.3s ease;
 }
 
 /* === Section Content === */
 section {
-  max-width: 900px;   /* A little wider for portfolio content */
+  max-width: 900px;    /* A little wider for portfolio content */
   margin: auto;
   padding: 4rem 2rem;
 }
@@ -71,7 +68,7 @@ h2 {
 
 /* === Project Cards === */
 .project {
-  background: #111;   /* Slightly lighter black */
+  background: #111;    /* Slightly lighter black */
   padding: 2rem;
   margin: 2rem 0;
   border-radius: 10px;
@@ -86,48 +83,3 @@ h2 {
 
 .project h3 {
   color: #00ffff; /* Cyan titles */
-  margin-bottom: 0.75rem;
-}
-
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #000;
-  border-top: 1px solid #222;
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* === Links === */
-a {
-  color: #00ffff;
-}
-
-a:hover {
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-/* === Resume Button === */
-.resume-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #00ffff;   /* Cyan background */
-  color: #000;           /* Black text */
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.resume-btn:hover {
-  background: #fff;      /* White background on hover */
-  color: #000;           
-  transform: translateY(-2px); /* Subtle lift effect */
-}
-
-
-
-
-
