@@ -10,7 +10,6 @@ body {
 
 /* === Header and Navigation Styles === */
 header {
-  padding: 1.5rem 2rem;
   background: #000;
   border-bottom: 1px solid #222;
 }
@@ -19,6 +18,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 900px; /* Match this to your section's max-width */
+  margin: 0 auto;   /* Center the nav horizontally */
+  padding: 1.5rem 2rem; /* Add padding to the nav itself for spacing */
 }
 
 .nav-name {
@@ -51,7 +53,7 @@ nav a:hover {
 /* === Section Content === */
 section {
   max-width: 900px;    /* A little wider for portfolio content */
-  margin: auto;
+  margin: auto;        /* Ensure section is centered */
   padding: 4rem 2rem;
 }
 
@@ -83,3 +85,43 @@ h2 {
 
 .project h3 {
   color: #00ffff; /* Cyan titles */
+  margin-bottom: 0.75rem;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  border-top: 1px solid #222;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* === Links === */
+a {
+  color: #00ffff;
+}
+
+a:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* === Resume Button === */
+.resume-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #00ffff;    /* Cyan background */
+  color: #000;        /* Black text */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #fff;      /* White background on hover */
+  color: #000;          
+  transform: translateY(-2px); /* Subtle lift effect */
+}
