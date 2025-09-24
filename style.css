@@ -143,11 +143,16 @@ h2 {
     color: #888; /* Sets the text color */
 }
 
-/* === Project Cards === */
+/* === Project Cards and Grid === */
+.project-grid {
+    display: grid; /* Enables CSS Grid for the layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+    gap: 2rem; /* Adds a gap between the grid items */
+}
+
 .project {
     background: #111; /* Sets the background color of the project card */
-    padding: 2rem; /* Adds internal padding */
-    margin: 2rem 0; /* Adds margin above and below the card */
+    padding: 1.5rem; /* Adds internal padding */
     border-radius: 10px; /* Rounds the corners */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6); /* Adds a drop shadow */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adds a transition for smooth hover effects */
@@ -227,5 +232,8 @@ footer {
     .summary-details, .summary-image-group {
         width: 100%; /* Makes both elements take up the full width */
         padding-right: 0; /* Removes padding on the right */
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* Changes to a single column layout on smaller screens */
     }
 }
