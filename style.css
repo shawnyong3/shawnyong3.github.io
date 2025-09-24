@@ -3,228 +3,229 @@
 
 /* === Global Styles === */
 body {
-    font-family: 'Roboto', 'Inter', sans-serif;
-    line-height: 1.6;
-    color: white; /* Light text for readability */
-    background-color: black; /* Very dark background */
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', 'Inter', sans-serif; /* Sets the font for the entire page, with fallbacks */
+    line-height: 1.6; /* Sets the spacing between lines of text */
+    color: white; /* Sets the default text color to white */
+    background-color: black; /* Sets the background color of the page to black */
+    margin: 0; /* Removes default browser margins on the body */
+    padding: 0; /* Removes default browser padding on the body */
 }
 
 /* === Main Containers === */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* More prominent shadow for depth */
-    border-radius: 12px;
-    padding-top: 50px;
+    max-width: 800px; /* Sets a maximum width for the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds internal padding */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adds a drop shadow for depth */
+    border-radius: 12px; /* Rounds the corners of the container */
+    padding-top: 50px; /* Adds space at the top of the container */
 }
 
 .wide-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 50px;
+    max-width: 1000px; /* Sets a wider maximum width for the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding-top: 50px; /* Adds space at the top of the container */
 }
 
 /* === Header and Navigation Styles === */
 header {
-    background: #000;
+    background: #000; /* Sets the background color of the header */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
+    display: flex; /* Uses Flexbox to arrange the navigation items */
+    justify-content: space-between; /* Aligns items with space between them (name on left, links on right) */
+    align-items: center; /* Vertically centers the items */
+    max-width: 900px; /* Sets the maximum width of the navigation content */
+    margin: 0 auto; /* Centers the navigation bar */
+    padding: 1.5rem 2rem; /* Adds internal padding for spacing around the links */
 }
 
 .nav-name {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
+    font-size: 1.25rem; /* Sets the font size for the name link ("Shawn Yong") */
+    font-weight: 600; /* Makes the name font a bit bolder */
+    color: #fff; /* Sets the color of the name link */
+    text-decoration: none; /* Removes the underline from the link */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
+    list-style: none; /* Removes the default bullet points from the list */
+    margin: 0; /* Removes default list margins */
+    padding: 0; /* Removes default list padding */
+    display: flex; /* Uses Flexbox to align list items (links) horizontally */
+    gap: 1.5rem; /* Adds space between the list items (links) */
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
+    color: #fff; /* Sets the text color of all links inside the nav */
+    text-decoration: none; /* Removes the underline from the links */
+    font-weight: 500; /* Sets the font weight of the links */
+    font-size: 1rem; /* Sets the font size for the "About" and "Projects" buttons */
 }
 
 nav a:hover {
-    color: #00ffff;
-    transition: color 0.3s ease;
+    color: #00ffff; /* Changes the color of the links when hovered over */
+    transition: color 0.3s ease; /* Adds a smooth transition effect to the color change */
 }
 
 /* === Section Content === */
 section {
-    max-width: 900px;
-    margin: auto;
-    padding: 4rem 2rem;
+    max-width: 900px; /* Sets the maximum width for section content */
+    margin: auto; /* Centers the section horizontally */
+    padding: 4rem 2rem; /* Adds internal padding for spacing around the content */
 }
 
 h1, h2, h3 {
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    color: #fff; /* Sets the text color for all headings */
+    font-weight: 600; /* Sets the font weight for all headings */
+    letter-spacing: 0.5px; /* Adds slight spacing between letters */
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem; /* Sets the font size for h2 headings */
+    margin-bottom: 1.5rem; /* Adds margin below the h2 heading */
 }
 
 /* === Project Styles === */
 .project-info {
-    text-align: left;
-    font-style: italic;
-    color: #b0b0b0;
-    margin-bottom: 20px;
+    text-align: left; /* Aligns text to the left */
+    font-style: italic; /* Makes the text italic */
+    color: #b0b0b0; /* Sets the text color */
+    margin-bottom: 20px; /* Adds margin below the element */
 }
 
 .project-section {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.2em; /* Sets the font size */
+    margin-bottom: 30px; /* Adds margin below the element */
 }
 
 .project-section p {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Adds margin below paragraphs within this section */
 }
 
 .project-section h2 {
-    font-size: 2em;
-    color: #008cff;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    font-size: 2em; /* Sets the font size for h2 in this section */
+    color: #008cff; /* Sets the text color */
+    margin-bottom: 10px; /* Adds margin below the heading */
+    padding-bottom: 10px; /* Adds padding below the heading */
 }
 
 /* === Media Formatting === */
 .media-container {
-    width: 100%;
-    height: 350px;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    color: #b0b0b0;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    width: 100%; /* Sets the width to 100% of its parent */
+    height: 350px; /* Sets a fixed height */
+    background-color: #333; /* Sets a background color */
+    display: flex; /* Uses Flexbox to center its content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    font-size: 1.5em; /* Sets the font size */
+    color: #b0b0b0; /* Sets the text color */
+    border-radius: 8px; /* Rounds the corners */
+    margin-bottom: 10px; /* Adds margin below the element */
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1); /* Adds an inner shadow effect */
+    overflow: hidden; /* Hides any content that overflows the container */
 }
 
 .media-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 100%; /* Sets the image width to 100% of its container */
+    height: 100%; /* Sets the image height to 100% of its container */
+    object-fit: contain; /* Ensures the entire image is visible within its container, scaling down if needed */
 }
 
 .wide-container .media-container img {
-    object-fit: cover;
+    object-fit: cover; /* Makes the image fill the container, cropping if necessary */
 }
 
 .media-caption {
-    text-align: left;
-    font-style: italic;
-    font-size: 0.9em;
-    color: #888;
+    text-align: left; /* Aligns the caption text to the left */
+    font-style: italic; /* Makes the text italic */
+    font-size: 0.9em; /* Sets the font size */
+    color: #888; /* Sets the text color */
 }
 
 /* === Project Cards === */
 .project {
-    background: #111;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #111; /* Sets the background color of the project card */
+    padding: 2rem; /* Adds internal padding */
+    margin: 2rem 0; /* Adds margin above and below the card */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6); /* Adds a drop shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adds a transition for smooth hover effects */
 }
 
 .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
+    transform: translateY(-5px); /* Moves the card up slightly on hover */
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8); /* Changes the shadow on hover for a lift effect */
 }
 
 .project h3 {
-    color: #00ffff;
-    margin-bottom: 0.75rem;
+    color: #00ffff; /* Sets the text color of the project title */
+    margin-bottom: 0.75rem; /* Adds margin below the title */
 }
 
 /* === Summary Layout === */
 .summary-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: flex; /* Uses Flexbox for the summary layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    align-items: flex-start; /* Aligns items to the top */
 }
 
 .summary-details {
-    flex: 2;
-    padding-right: 20px;
+    flex: 2; /* Allows this element to take up 2/3 of the available space */
+    padding-right: 20px; /* Adds padding on the right */
 }
 
 .summary-image-group {
-    flex: 1;
-    min-width: 200px;
+    flex: 1; /* Allows this element to take up 1/3 of the available space */
+    min-width: 200px; /* Sets a minimum width */
 }
 
 /* === Links === */
 a {
-    color: #00ffff;
+    color: #00ffff; /* Sets the default color for all links not in the nav */
 }
 
 a:hover {
-    color: #fff;
-    transition: color 0.3s ease;
+    color: #fff; /* Changes the color of the links when hovered over */
+    transition: color 0.3s ease; /* Adds a smooth transition to the color change */
 }
 
 /* === Resume Button === */
 .resume-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #00ffff;
-    color: #000;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    display: inline-block; /* Makes the button a block-level element that respects spacing */
+    padding: 0.75rem 1.5rem; /* Adds internal padding for button size */
+    background: #00ffff; /* Sets the background color of the button */
+    color: #000; /* Sets the text color of the button */
+    font-weight: 600; /* Makes the text bold */
+    text-decoration: none; /* Removes the underline from the link */
+    border-radius: 8px; /* Rounds the corners of the button */
+    transition: all 0.3s ease; /* Adds a smooth transition for hover effects */
 }
 
 .resume-btn:hover {
-    background: #fff;
-    color: #000;
-    transform: translateY(-2px);
+    background: #fff; /* Changes the background color on hover */
+    color: #000; /* Changes the text color on hover */
+    transform: translateY(-2px); /* Lifts the button slightly on hover */
 }
 
 /* === Footer === */
 footer {
-    text-align: center;
-    padding: 2rem;
-    background: #000;
-    border-top: 1px solid #222;
-    color: #666;
-    font-size: 0.9rem;
+    text-align: center; /* Centers the text within the footer */
+    padding: 2rem; /* Adds internal padding */
+    background: #000; /* Sets the background color */
+    border-top: 1px solid #222; /* Adds a top border */
+    color: #666; /* Sets the text color */
+    font-size: 0.9rem; /* Sets the font size */
 }
 
 /* === Responsive Design === */
 @media (max-width: 768px) {
+    /* Styles that apply only on screens smaller than 768px */
     .summary-container {
-        flex-direction: column;
+        flex-direction: column; /* Changes the flex direction to column, stacking items vertically */
     }
     .summary-details, .summary-image-group {
-        width: 100%;
-        padding-right: 0;
+        width: 100%; /* Makes both elements take up the full width */
+        padding-right: 0; /* Removes padding on the right */
     }
 }
