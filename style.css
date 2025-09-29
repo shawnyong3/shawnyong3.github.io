@@ -17,13 +17,13 @@ body {
     margin: 0 auto; /* Centers the container horizontally */
     padding: 20px; /* Adds internal padding */
     border-radius: 12px; /* Rounds the corners of the container */
-    padding-top: 50px; /* Adds space at the top of the container */
+    padding-top: 25px; /* Adds space at the top of the container */
 }
 
 .wide-container {
     max-width: 1000px; /* Sets a wider maximum width for the container */
     margin: 0 auto; /* Centers the container horizontally */
-    padding-top: 50px; /* Adds space at the top of the container */
+    padding-top: 25px; /* Adds space at the top of the container */
 }
 
 /* === Header and Navigation Styles === */
@@ -90,7 +90,6 @@ h2 {
     text-align: left; /* Aligns text to the left */
     font-style: italic; /* Makes the text italic */
     color: #b0b0b0; /* Sets the text color */
-    margin-bottom: 20px; /* Adds margin below the element */
 }
 
 .project-section {
@@ -233,4 +232,5 @@ footer {
         grid-template-columns: 1fr; /* Changes to a single column layout on smaller screens */
     }
 }
+
 
