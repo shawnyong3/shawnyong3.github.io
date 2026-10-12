@@ -1,137 +1,145 @@
+
 /* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Inter:wght@400;500;600&display=swap');
 
 /* === Global Styles === */
 body {
-    font-family: 'Roboto', 'Inter', sans-serif; /* Sets the font for the entire page, with fallbacks */
-    line-height: 1.6; /* Sets the spacing between lines of text */
-    color: white; /* Sets the default text color to white */
-    background-color: black; /* Sets the background color of the page to black */
-    margin: 0; /* Removes default browser margins on the body */
-    padding: 0; /* Removes default browser padding on the body */
+    font-family: 'Roboto', 'Inter', sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 /* === Main Containers === */
 .container {
-    max-width: 800px; /* Sets a maximum width for the container */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 20px; /* Adds internal padding */
-    border-radius: 12px; /* Rounds the corners of the container */
-    padding-top: 25px; /* Adds space at the top of the container */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    padding-top: 25px;
 }
 
 .wide-container {
-    max-width: 1000px; /* Sets a wider maximum width for the container */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding-top: 25px; /* Adds space at the top of the container */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 25px;
 }
 
 /* === Header and Navigation Styles === */
 header {
-    background: #000; /* Sets the background color of the header */
+    background: #000;
 }
 
 nav {
-    display: flex; /* Uses Flexbox to arrange the navigation items */
-    justify-content: space-between; /* Aligns items with space between them (name on left, links on right) */
-    align-items: center; /* Vertically centers the items */
-    max-width: 900px; /* Sets the maximum width of the navigation content */
-    margin: 0 auto; /* Centers the navigation bar */
-    padding: 1.5rem 2rem; /* Adds internal padding for spacing around the links */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
 }
 
 .nav-name {
-    font-size: 1.25rem; /* Sets the font size for the name link ("Shawn Yong") */
-    font-weight: 600; /* Makes the name font a bit bolder */
-    color: #fff; /* Sets the color of the name link */
-    text-decoration: none; /* Removes the underline from the link */
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
 }
 
 nav ul {
-    list-style: none; /* Removes the default bullet points from the list */
-    margin: 0; /* Removes default list margins */
-    padding: 0; /* Removes default list padding */
-    display: flex; /* Uses Flexbox to align list items (links) horizontally */
-    gap: 1.5rem; /* Adds space between the list items (links) */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
 }
 
 nav a {
-    color: #fff; /* Sets the text color of all links inside the nav */
-    text-decoration: none; /* Removes the underline from the links */
-    font-weight: 500; /* Sets the font weight of the links */
-    font-size: 1rem; /* Sets the font size for the "About" and "Projects" buttons */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 nav a:hover {
-    color: #00ffff; /* Changes the color of the links when hovered over */
-    transition: color 0.3s ease; /* Adds a smooth transition effect to the color change */
+    color: #00ffff;
+    transition: color 0.3s ease;
 }
 
 /* === Section Content === */
 section {
-    max-width: 900px; /* Sets the maximum width for section content */
-    margin: auto; /* Centers the section horizontally */
-    padding: 4rem 2rem; /* Adds internal padding for spacing around the content */
+    max-width: 900px;
+    margin: auto;
+    padding: 4rem 2rem;
 }
 
 h1, h2, h3 {
-    color: #fff; /* Sets the text color for all headings */
-    font-weight: 600; /* Sets the font weight for all headings */
-    letter-spacing: 0.5px; /* Adds slight spacing between letters */
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 h2 {
-    font-size: 2rem; /* Sets the font size for h2 headings */
-    margin-bottom: 1.5rem; /* Adds margin below the h2 heading */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* === Project Styles === */
 .project-info {
-    text-align: left; /* Aligns text to the left */
-    font-style: italic; /* Makes the text italic */
-    color: #b0b0b0; /* Sets the text color */
+    text-align: left;
+    font-style: italic;
+    color: #b0b0b0;
     margin-top: 0 !important;
     margin-bottom: 0.5em;
 }
 
 .project-section {
-    font-size: 1.2em; /* Sets the font size */
-    margin-bottom: 30px; /* Adds margin below the element */
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .project-section p {
-    margin-bottom: 30px; /* Adds margin below paragraphs within this section */
+    margin-bottom: 30px;
 }
 
 .project-section h2 {
-    font-size: 2em; /* Sets the font size for h2 in this section */
-    color: #008cff; /* Sets the text color */
-    margin-bottom: 10px; /* Adds margin below the heading */
-    padding-bottom: 10px; /* Adds padding below the heading */
+    font-size: 2em;
+    color: #008cff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 /* === Media Formatting === */
 .media-container {
-    width: 100%; /* Sets the width to 100% of its parent */
-    height: 350px; /* Sets a fixed height */
-    display: flex; /* Uses Flexbox to center its content */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    font-size: 1.5em; /* Sets the font size */
-    color: #b0b0b0; /* Sets the text color */
-    border-radius: 8px; /* Rounds the corners */
-    margin-bottom: 10px; /* Adds margin below the element */
-    overflow: hidden; /* Hides any content that overflows the container */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #b0b0b0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
+/* Keep existing image behavior unchanged */
 .media-container img {
-    width: 100%; /* Sets the image width to 100% of its container */
-    height: 100%; /* Sets the image height to 100% of its container */
-    object-fit: contain; /* Ensures the entire image is visible within its container, scaling down if needed */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
+/* Keep the existing wide-container image behavior */
 .wide-container .media-container img {
-    object-fit: cover; /* Makes the image fill the container, cropping if necessary */
+    object-fit: cover;
+}
+
+/* Only video containers adjust to the video's natural height */
+.media-container:has(video) {
+    height: auto;
 }
 
 /* Show the entire video without cropping */
@@ -144,107 +152,104 @@ h2 {
 }
 
 .media-caption {
-    text-align: left; /* Aligns the caption text to the left */
-    font-style: italic; /* Makes the text italic */
-    font-size: 0.9em; /* Sets the font size */
-    color: #888; /* Sets the text color */
+    text-align: left;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #888;
 }
 
 /* === Project Cards and Grid === */
 .project-grid {
-    display: grid; /* Enables CSS Grid for the layout */
-    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
-    gap: 2rem; /* Adds a gap between the grid items */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .project {
-    padding: 1.5rem; /* Adds internal padding */
-    border-radius: 10px; /* Rounds the corners */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6); /* Adds a drop shadow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adds a transition for smooth hover effects */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project:hover {
-    transform: translateY(-5px); /* Moves the card up slightly on hover */
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8); /* Changes the shadow on hover for a lift effect */
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
 }
 
 .project h3 {
-    color: #00ffff; /* Sets the text color of the project title */
-    margin-bottom: 0.75rem; /* Adds margin below the title */
+    color: #00ffff;
+    margin-bottom: 0.75rem;
 }
 
 /* === Summary Layout === */
 .summary-container {
-    display: flex; /* Uses Flexbox for the summary layout */
-    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    align-items: flex-start; /* Aligns items to the top */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .summary-details {
-    flex: 2; /* Allows this element to take up 2/3 of the available space */
-    padding-right: 20px; /* Adds padding on the right */
+    flex: 2;
+    padding-right: 20px;
 }
 
 .summary-image-group {
-    flex: 1; /* Allows this element to take up 1/3 of the available space */
-    min-width: 200px; /* Sets a minimum width */
+    flex: 1;
+    min-width: 200px;
 }
 
 /* === Links === */
 a {
-    color: #00ffff; /* Sets the default color for all links not in the nav */
+    color: #00ffff;
 }
 
 a:hover {
-    color: #fff; /* Changes the color of the links when hovered over */
-    transition: color 0.3s ease; /* Adds a smooth transition to the color change */
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
 /* === Resume Button === */
 .resume-btn {
-    display: inline-block; /* Makes the button a block-level element that respects spacing */
-    padding: 0.75rem 1.5rem; /* Adds internal padding for button size */
-    background: #00ffff; /* Sets the background color of the button */
-    color: #000; /* Sets the text color of the button */
-    font-weight: 600; /* Makes the text bold */
-    text-decoration: none; /* Removes the underline from the link */
-    border-radius: 8px; /* Rounds the corners of the button */
-    transition: all 0.3s ease; /* Adds a smooth transition for hover effects */
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #00ffff;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .resume-btn:hover {
-    background: #fff; /* Changes the background color on hover */
-    color: #000; /* Changes the text color on hover */
-    transform: translateY(-2px); /* Lifts the button slightly on hover */
+    background: #fff;
+    color: #000;
+    transform: translateY(-2px);
 }
 
 /* === Footer === */
 footer {
-    text-align: center; /* Centers the text within the footer */
-    padding: 2rem; /* Adds internal padding */
-    background: #000; /* Sets the background color */
-    border-top: 1px solid #222; /* Adds a top border */
-    color: #666; /* Sets the text color */
-    font-size: 0.9rem; /* Sets the font size */
+    text-align: center;
+    padding: 2rem;
+    background: #000;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* === Responsive Design === */
 @media (max-width: 768px) {
-    /* Styles that apply only on screens smaller than 768px */
     .summary-container {
-        flex-direction: column; /* Changes the flex direction to column, stacking items vertically */
+        flex-direction: column;
     }
-    .summary-details, .summary-image-group {
-        width: 100%; /* Makes both elements take up the full width */
-        padding-right: 0; /* Removes padding on the right */
+
+    .summary-details,
+    .summary-image-group {
+        width: 100%;
+        padding-right: 0;
     }
+
     .project-grid {
-        grid-template-columns: 1fr; /* Changes to a single column layout on smaller screens */
+        grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
