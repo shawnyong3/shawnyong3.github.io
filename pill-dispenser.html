@@ -60,7 +60,7 @@
                 </video> 
             </div>
             
-            <p> We ran into an issue where the pills would get jammed in the funnel and realizing that a 2 gate system would require more than 1 motor, making the pill dispenser complicated and cluttered. The concept was then reiterated to use a gear in order to clear any jams and shuttle the pills down a hole. A limit switch was installed to count how many times the gear has moved via the physical pressing of the limit switch with the gear tooth. It has code to sync up with the rotary table and to stop dispensing once the limit switch counts thirty gear clicks, indicating all thirty pills dispensed.</p>
+            <p> We ran into an issue where the pills would get jammed in the funnel and realizing that a 2 gate system would require more than 1 motor, making the pill dispenser needlessly complex and cluttered. The concept was then reiterated to use a gear in order to clear any jams and shuttle the pills down a hole. A limit switch was installed to count how many times the gear has moved via the physical pressing of the limit switch with the gear tooth. It has code to sync up with the rotary table and to stop dispensing once the limit switch counts thirty gear clicks, indicating all thirty pills dispensed.</p>
             <div class="media-container">
                 <video controls>
                     <source src="jr-design-images/limit-switch-pill-dispenser.mp4" type="video/mp4">
@@ -70,7 +70,7 @@
             
             <p class="media-caption">Initial prototype had motor stalling and needed a push to get the momentum going. The torque was later increased.</p>
 
-            <p>Although, the limit switch had a 100% success rate at dispensing 30 pills with a full container, a problem arose where when the pill dispenser is near empty, not every gear tooth will hold a pill, but it still gets counted any way, affecting how many pills go into the last few bottles. So the limit switch was replaced to a break beam sensor, using the physical breaking of a beam to count how many pills were dispensed.</p>
+            <p>Although, the limit switch had a 100% success rate at dispensing 30 pills with a full container, a problem arose where when the pill dispenser is near empty, not every gear tooth will hold a pill, but each limit switch click gets counted any way, affecting how many pills go into the last few bottles. So the limit switch was replaced to a break beam sensor, using the physical breaking of a beam to count how many pills were dispensed.</p>
             <div class="media-container">
                 <img src="jr-design-images/break-beam-test.gif" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
             </div>
@@ -78,13 +78,7 @@
                 <img src="jr-design-images/break-beam-sensor.JPG" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
             </div>
 
-            <p>By itself, the pill dispenser was able to accurately dispense 30 pills even when not all of the gear teeth were full, but unfortunately, it wasn't well synced with the rotary table, leading to premature dispensing when there wasn't a bottle underneath. With a time crunch at the time, there wasn't enough time to address the issue before the junior design presentation. So fast forward 2 years, I have synced the pill dispenser to start dispensing after a certain amount of rotary table rotations as well as continuing the next rotary table rotation after 30 pills were dispensed.</p>
-            <div class="media-container">
-                <video controls>
-                    <source src="placeholder-video.mp4" type="video/mp4">
-                    The video will be coming soon!
-                </video> 
-            </div>
+            <p>With the implementation of the new sensor, even if a pill didn't come out with every spin, the pill dispenser kept spinning until it dispensed exactly 30 pills.</p>
         </section>
 
         <!-- Conclusion Section -->
@@ -92,7 +86,7 @@
             <h2>
                 Conclusion
             </h2>
-            <p id="conclusion-content">After going through many iterations, the pill dispenser with a break beam sensor was able to reliably dispense 30 pills without any human intervention.</p>
+            <p id="conclusion-content">This was one of many electromechanical projects that I've sucessfully made. In hindsight, the final result could easily be replicated withing 1 day. But all the months learning Arduino coding for the first time, 3D print fitting and tolerancing, iterations, and wiring while juggling with a rigorous engineering curriculum have led up to the final iteration today.</p>
         </section>
 
     </div>
