@@ -132,6 +132,29 @@ h2 {
     object-fit: contain;
 }
 
+
+.media-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.media-row .media-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.media-row .media-container img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 /* Keep the existing wide-container image behavior */
 .wide-container .media-container img {
     object-fit: cover;
