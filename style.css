@@ -147,23 +147,42 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Override the fixed height ONLY for containers inside media-row */
+/* Remove fixed container dimensions for these images */
 .media-row .media-container {
     width: 100%;
     height: auto;
     min-width: 0;
     margin: 0;
+    padding: 0;
     overflow: visible;
+    display: block;
 }
 
-/* Preserve each image's aspect ratio */
+/* Show the entire image without cropping or zooming */
 .media-row .media-container img {
+    display: block;
     width: 100%;
     height: auto;
     max-width: 100%;
     object-fit: contain;
     border-radius: 8px;
 }
+
+
+
+Why this fixes it
+- height: auto preserves each image's original aspect ratio.
+- object-fit: contain prevents cropping.
+- display: block removes unwanted inline-image spacing.
+- The two columns remain equal in width.
+One important detail: Your CSS also contains this rule:
+.wide-container .media-container img {
+    object-fit: cover;
+}
+
+
+That rule can cause zooming and cropping for images inside .wide-container. The new .media-row .media-container img rule should override it when both selectors apply, but you can remove object-fit: cover from the wide-container rule if you want those images to show their entire contents too.
+If the images still look zoomed in after this change, the GIF or PNG itself may contain the framing you're seeing, rather than the CSS.
 
 /* Keep existing wide-container image behavior */
 .wide-container .media-container img {
