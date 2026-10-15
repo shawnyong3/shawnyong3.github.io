@@ -60,7 +60,8 @@
                 </video> 
             </div>
             
-            <p> We ran into an issue where the pills would get jammed in the funnel and realizing that a 2 gate system would require more than 1 motor, making the pill dispenser needlessly complex and cluttered. The concept was then reiterated to use a gear in order to clear any jams and shuttle the pills down a hole. A limit switch was installed to count how many times the gear has moved via the physical pressing of the limit switch with the gear tooth. It has code to sync up with the rotary table and to stop dispensing once the limit switch counts thirty gear clicks, indicating all thirty pills dispensed.</p>
+            <p> We ran into an issue where the pills would get jammed in the funnel and realizing that a 2 gate system would require at least 3 motors to operate the 2 gates as well as an agitator to prevent jams, making the pill dispenser needlessly complex and cluttered. The concept was then reiterated to use a gear to drive the pills down a hole. This solved the jamming issue and only required 1 motor. A limit switch was installed to count how many times the gear has moved via the physical pressing of the limit switch with the gear tooth. It had code to sync up with the rotary table and to stop dispensing once the limit switch counts thirty gear clicks, indicating all thirty pills dispensed.</p>
+            
             <div class="media-container">
                 <video controls>
                     <source src="jr-design-images/limit-switch-pill-dispenser.mp4" type="video/mp4">
@@ -70,12 +71,18 @@
             
             <p class="media-caption">Initial prototype had motor stalling and needed a push to get the momentum going. The torque was later increased.</p>
 
+            <div class="media-container">
+                <img src="jr-design-images/limit-switch-pill-dispenser.gif" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+            </div>
+
+            <p class="media-caption">Limit switch counting in action.</p>
+            
             <p>Although, the limit switch had a 100% success rate at dispensing 30 pills with a full container, a problem arose where when the pill dispenser is near empty, not every gear tooth will hold a pill, but each limit switch click gets counted any way, affecting how many pills go into the last few bottles. So the limit switch was replaced to a break beam sensor, using the physical breaking of a beam to count how many pills were dispensed.</p>
             <div class="media-container">
                 <img src="jr-design-images/break-beam-test.gif" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
             </div>
             <div class="media-container">
-                <img src="jr-design-images/break-beam-sensor.JPG" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
+                <img src="jr-design-images/final-pill-dispenser.png" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">
             </div>
 
             <p>With the implementation of the new sensor, even if a pill didn't come out with every spin, the pill dispenser kept spinning until it dispensed exactly 30 pills.</p>
