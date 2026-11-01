@@ -194,6 +194,14 @@ If the images still look zoomed in after this change, the GIF or PNG itself may 
     height: auto;
 }
 
+section img {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* Show the entire video without cropping */
 .media-container video {
     display: block;
